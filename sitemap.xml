@@ -10,4 +10,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://lesierse.it/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://lesierse.it/nl/"/>
   </url>
+  <url>
+    <loc>https://lesierse.it/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lesierse.it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lesierse.it/nl/voorwaarden/"/>
+  </url>
+  <url>
+    <loc>https://lesierse.it/nl/voorwaarden/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lesierse.it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lesierse.it/nl/voorwaarden/"/>
+  </url>
 </urlset>

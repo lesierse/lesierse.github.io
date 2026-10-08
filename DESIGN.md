@@ -186,6 +186,9 @@ Sticky translucent header with wordmark (blue square glyph, white L, marigold ba
 
 **Motion:** the single authored moment is relationships drawing themselves in on load (stroke-dashoffset, 1.1s expo-out, staggered), labels and arrowheads fading in after. Disabled under `prefers-reduced-motion`.
 
+### Legal document (Read mode)
+`/terms/` (EN) and `/nl/voorwaarden/` (NL, leading text). `.legal-head` (h1, `[bracketed]` version meta, marigold-ruled `.legal-note`, download buttons for both PDFs), then `.legal-body`: sticky `.legal-toc` beside a white `.legal-text` sheet. Articles carry a blue outlined `.art-num` box; clauses are numbered `n.m` in narrow wire-coloured notation. `@media print` strips chrome; the PDFs in `/assets/legal/` are rendered from these pages with Playwright `page.pdf()` so web and PDF stay identical.
+
 ## Do's and Don'ts
 
 ### Do:
