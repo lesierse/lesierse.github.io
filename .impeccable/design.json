@@ -75,7 +75,7 @@
       "kind": "button",
       "refersTo": "button-primary",
       "description": "Main call to action (email).",
-      "html": "<a class=\"ds-btn\" href=\"#\">Email info@lesierse.it</a>",
+      "html": "<a class=\"ds-btn\" href=\"#\">Email build@lesierse.it</a>",
       "css": ".ds-btn{display:inline-flex;align-items:center;min-height:48px;padding:0 24px;border-radius:6px;background:#1554d1;color:#fff;font:650 1rem Archivo,system-ui,sans-serif;text-decoration:none;box-shadow:0 1px 0 rgba(12,26,43,.25),0 6px 18px -8px rgba(21,84,209,.7);transition:background .18s,transform .18s}.ds-btn:hover{background:#0f43ad;transform:translateY(-1px)}.ds-btn:focus-visible{outline:3px solid #1554d1;outline-offset:3px}"
     },
     {

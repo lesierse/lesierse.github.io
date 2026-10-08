@@ -35,7 +35,7 @@ Visitors are decision makers and technical leads evaluating a supplier, typicall
 
 ## Evidence on Hand
 - Ace31 (https://apps.apple.com/app/ace31/id394396413): Lesierse IT's own mobile app, the classic card game 31 for iPhone, iPad and Android; 1–5 AI opponents, fully offline, no ads/accounts/data collection, five languages. The Number Two Games brand is intentionally not shown on the site (less professional tone).
-- Contact: info@lesierse.it. KvK 42185604. BTW NL003590651B55.
+- Contact: build@lesierse.it. KvK 42185604. BTW NL003590651B55.
 - No client logos, testimonials, case studies, prices or metrics exist; never fabricate them.
 
 ## Product Principles
