@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-08T06:34:40.180806+00:00",
+  "title": "Design System: Lesierse IT",
+  "extensions": {
+    "colorMeta": {
+      "system-blue": {
+        "role": "primary",
+        "displayName": "System Blue"
+      },
+      "person-navy": {
+        "role": "secondary",
+        "displayName": "Person Navy"
+      },
+      "own-marigold": {
+        "role": "tertiary",
+        "displayName": "Own-Product Marigold"
+      },
+      "canvas-paper": {
+        "role": "neutral",
+        "displayName": "Canvas Paper"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only, wide stretch."
+      },
+      "notation": {
+        "displayName": "Notation",
+        "purpose": "Bracketed type labels, edge labels, captions; narrow stretch."
+      }
+    },
+    "shadows": [
+      {
+        "name": "sheet",
+        "value": "0 2px 4px rgba(12,26,43,.04), 0 24px 48px -24px rgba(12,26,43,.22)",
+        "purpose": "Diagram sheet on canvas."
+      },
+      {
+        "name": "button",
+        "value": "0 1px 0 rgba(12,26,43,.25), 0 6px 18px -8px rgba(21,84,209,.7)",
+        "purpose": "Primary button."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Relationship draw-in and hover lifts."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "lg",
+        "value": "960px"
+      },
+      {
+        "name": "md",
+        "value": "760px"
+      },
+      {
+        "name": "sm",
+        "value": "560px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main call to action (email).",
+      "html": "<a class=\"ds-btn\" href=\"#\">Email info@lesierse.it</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;min-height:48px;padding:0 24px;border-radius:6px;background:#1554d1;color:#fff;font:650 1rem Archivo,system-ui,sans-serif;text-decoration:none;box-shadow:0 1px 0 rgba(12,26,43,.25),0 6px 18px -8px rgba(21,84,209,.7);transition:background .18s,transform .18s}.ds-btn:hover{background:#0f43ad;transform:translateY(-1px)}.ds-btn:focus-visible{outline:3px solid #1554d1;outline-offset:3px}"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Secondary action.",
+      "html": "<a class=\"ds-btn-q\" href=\"#\">What I do</a>",
+      "css": ".ds-btn-q{display:inline-flex;align-items:center;min-height:48px;padding:0 24px;border-radius:6px;background:#fff;color:#0c1a2b;border:1px solid #c9d2de;font:650 1rem Archivo,system-ui,sans-serif;text-decoration:none}.ds-btn-q:hover{border-color:#5a6b83}.ds-btn-q:focus-visible{outline:3px solid #1554d1;outline-offset:3px}"
+    },
+    {
+      "name": "System Node",
+      "kind": "custom",
+      "refersTo": "node-system",
+      "description": "Typed diagram box for a software system.",
+      "html": "<div class=\"ds-node\"><b>Lesierse IT</b><span>[Software studio]</span></div>",
+      "css": ".ds-node{display:inline-grid;text-align:center;padding:16px 24px;border-radius:6px;background:#1554d1;color:#fff;font-family:Archivo,system-ui,sans-serif}.ds-node span{font-size:.75rem;font-stretch:78%;color:#dce7fb}"
+    },
+    {
+      "name": "Own Product Node",
+      "kind": "custom",
+      "refersTo": "node-own",
+      "description": "Marigold node reserved for own apps (Ace31).",
+      "html": "<div class=\"ds-own\"><b>Ace31</b><span>[Own app · iOS · Android]</span></div>",
+      "css": ".ds-own{display:inline-grid;text-align:center;padding:12px 16px;border-radius:6px;background:#f4b000;border:1.5px solid #c98f00;color:#0c1a2b;font-family:Archivo,system-ui,sans-serif}.ds-own span{font-size:.75rem;font-stretch:78%;color:#3d2f00}"
+    },
+    {
+      "name": "Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Technology tag in a service container.",
+      "html": "<span class=\"ds-chip\">Kubernetes</span>",
+      "css": ".ds-chip{display:inline-block;padding:3px 10px;border:1px solid #c9d2de;border-radius:4px;font:400 .8125rem Archivo,system-ui,sans-serif;font-stretch:78%}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The System Context Diagram",
+    "overview": "Lesierse IT is presented in the C4-style architecture notation its buyers read every day: typed boxes, labelled dashed relationships, dashed system boundaries on a dot-grid canvas. Colour is semantic: navy person, blue system, marigold own product, white client system.",
+    "keyCharacteristics": [
+      "Dot-grid canvas paper with white diagram sheets laid on top.",
+      "Every box carries a name, a bracketed type label and optionally a one-line description.",
+      "Dashed relationships with labelled verbs and solid arrowheads.",
+      "One wide, heavy grotesque for statements; the same family narrowed for notation.",
+      "Bilingual (EN at /, NL at /nl/) with identical structure."
+    ],
+    "rules": [
+      {
+        "name": "The Diagram Legend Rule",
+        "body": "Colour means node type. Navy = person, blue = system, marigold = own product, white = client system. Never use marigold for anything that isn't Lesierse IT's own product or the contact underline.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tinted Secondary Rule",
+        "body": "Secondary text on navy or blue uses #dce7fb, never grey (≥5:1 on blue).",
+        "section": "colors"
+      },
+      {
+        "name": "The Notation Is Not Monospace Rule",
+        "body": "Technical labels use narrowed Archivo, never a monospace costume.",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "Do express new content as typed nodes, relationships or boundaries before reaching for generic cards.",
+      "Do keep every claim factual; experience is described as skills, never as employer names.",
+      "Do keep EN and NL pages structurally identical."
+    ],
+    "donts": [
+      "Don't add eyebrow labels above headings; the bracketed type label goes below a name.",
+      "Don't use gradient text, glass decoration or monospace for \"tech\" flavour.",
+      "Don't invent client logos, testimonials, metrics or prices.",
+      "Don't use marigold outside own apps and the contact underline."
+    ]
+  }
+}
